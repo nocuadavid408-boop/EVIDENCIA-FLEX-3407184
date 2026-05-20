@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    margin: 20px auto;
+    flex-direction: row;
+    width: 90%;
+    height: 600px;
+    border: black 1px solid;
+}
+
+.horas{
+    width: 20%;
+    height: 600px;
+    border-right: rgba(75, 75, 75, 0.97) 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.hora{
+    flex-grow:  1;
+    border-bottom:  rgba(75, 75, 75, 0.97)1px dashed;
+    text-align: center;
+    padding: 35px;
+}
+
+.hora:last-child{
+    border-bottom: none;
+}
+
+.dias{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 600px;
+}
+
+.dia{
+    flex-grow: 1;
+    border-right: rgba(75, 75, 75, 0.97) 1px solid;
+}
+
+.dia:last-child{
+    border-right: none;
+}
+
+.encabezado{
+      border-bottom: rgba(75, 75, 75, 0.97) 1px solid;
+      height: 65.5px;
+      text-align: center;
+      padding: 20px;
+}
+
+.programacion{
+    position: relative;
+    /* posicionar en y*/
+    top: 87px;
+    /* posicionar en x*/
+    left: 10px;
+    width: 90%;
+    height: 180px;
+    background-color: rgb(163, 158, 158);
+}   
+
+.ingles_lunes{
+    position: relative;
+    top:180px;
+    left: 10px;
+    width: 90%;
+    height: 160px;
+    background-color: rgb(163, 158, 158);
+}
+
+
+   
