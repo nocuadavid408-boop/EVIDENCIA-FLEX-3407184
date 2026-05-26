@@ -1,125 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Horario SENA</title>
     <link rel="stylesheet" href="evidencia.css">
 </head>
 <body>
-    <div class="container">
+<div class="container">
 
-        <div class="horas">
-            <div class="hora encabezado-hora"></div>
-            <div class="hora">6:15 am - 9:00 am</div>
-            <div class="hora receso-hora">Receso</div>
-            <div class="hora">9:00 am - 12:00 pm</div>
-            <div class="hora jornada-hora">JORNADA TARDE</div>
-            <div class="hora receso-hora">Receso</div>
-            <div class="hora">12:00 pm - 3:00 pm</div>
-            <div class="hora receso-hora">Receso</div>
-            <div class="hora">3:00 pm - 6:00 pm</div>
-        </div>
+    <!-- FILA 1: encabezados -->
+    <div class="c enc"></div>
+    <div class="c enc">Lunes</div>
+    <div class="c enc">Martes</div>
+    <div class="c enc">Miércoles</div>
+    <div class="c enc">Jueves</div>
+    <div class="c enc">Viernes</div>
 
-        <div class="dias">
+    <!-- FILA 2: 6:15 - 9:00 -->
+    <div class="c hora">6:15 am<br>9:00 am</div>
+    <div class="c slot"><div class="bloque"><img class="img-c" src="TU_RUTA/derecho.jpg" alt=""><span class="mat-text">Derechos Fundamentales</span></div></div>
+    <div class="c slot"><div class="bloque"><img class="img-c" src="TU_RUTA/propuesta.jpg" alt=""><span class="mat-text">Elaborar propuesta técnica del software</span></div></div>
+    <div class="c slot"><div class="bloque"><img class="img-c" src="TU_RUTA/interfaz.jpg" alt=""><span class="mat-text">Características técnicas de la interfaz gráfica</span></div></div>
+    <div class="c slot"><div class="bloque"><img class="img-c" src="TU_RUTA/codificar.jpg" alt=""><span class="mat-text">Codificar el software</span></div></div>
+    <div class="c slot"><div class="bloque"><img class="img-c" src="TU_RUTA/basedatos.jpg" alt=""><span class="mat-text">Construir la base de datos</span></div></div>
 
-            <div class="dia">
-                <div class="encabezado">Lunes</div>
-                <div class="programacion">
-                    <img class="img-circulo" src="TU_RUTA/derecho.jpg" alt="Derechos Fundamentales">
-                    <span class="mat-text">Derechos Fundamentales</span>
-                </div>
-                <div class="receso-dia">Receso</div>
-                <div class="programacion2">
-                    <img class="img-circulo" src="TU_RUTA/derecho.jpg" alt="Derechos Fundamentales">
-                    <span class="mat-text">Derechos Fundamentales</span>
-                </div>
-                <div class="jornada-banner">— JORNADA TARDE —</div>
-                <div class="receso-dia">Receso</div>
-                <div class="vacio"></div>
-                <div class="receso-dia">Receso</div>
-                <div class="vacio"></div>
-            </div>
+    <!-- FILA 3: receso -->
+    <div class="c rec">Receso</div>
+    <div class="c rec">Receso</div>
+    <div class="c rec">Receso</div>
+    <div class="c rec">Receso</div>
+    <div class="c rec">Receso</div>
+    <div class="c rec">Receso</div>
 
-            <div class="dia">
-                <div class="encabezado">Martes</div>
-                <div class="programacion">
-                    <img class="img-circulo" src="TU_RUTA/propuesta.jpg" alt="Propuesta técnica">
-                    <span class="mat-text">Elaborar propuesta técnica del software</span>
-                </div>
-                <div class="receso-dia">Receso</div>
-                <div class="programacion2">
-                    <img class="img-circulo" src="TU_RUTA/propuesta.jpg" alt="Propuesta técnica">
-                    <span class="mat-text">Elaborar propuesta técnica del software</span>
-                </div>
-                <div class="jornada-banner">— JORNADA TARDE —</div>
-                <div class="receso-dia">Receso</div>
-                <div class="vacio"></div>
-                <div class="receso-dia">Receso</div>
-                <div class="vacio"></div>
-            </div>
+    <!-- FILA 4: 9:00 - 12:00 -->
+    <div class="c hora">9:00 am<br>12:00 pm</div>
+    <div class="c slot"><div class="bloque"><img class="img-c" src="TU_RUTA/derecho.jpg" alt=""><span class="mat-text">Derechos Fundamentales</span></div></div>
+    <div class="c slot"><div class="bloque"><img class="img-c" src="TU_RUTA/propuesta.jpg" alt=""><span class="mat-text">Elaborar propuesta técnica del software</span></div></div>
+    <div class="c slot"><div class="bloque"><img class="img-c" src="TU_RUTA/interfaz.jpg" alt=""><span class="mat-text">Características técnicas de la interfaz gráfica</span></div></div>
+    <div class="c slot"><div class="bloque"><img class="img-c" src="TU_RUTA/codificar.jpg" alt=""><span class="mat-text">Codificar el software</span></div></div>
+    <div class="c slot"><div class="bloque"><img class="img-c" src="TU_RUTA/modelar.jpg" alt=""><span class="mat-text">Modelar funciones del software</span></div></div>
 
-            <div class="dia">
-                <div class="encabezado">Miércoles</div>
-                <div class="programacion">
-                    <img class="img-circulo" src="TU_RUTA/interfaz.jpg" alt="Interfaz gráfica">
-                    <span class="mat-text">Características técnicas de la interfaz gráfica</span>
-                </div>
-                <div class="receso-dia">Receso</div>
-                <div class="programacion2">
-                    <img class="img-circulo" src="TU_RUTA/interfaz.jpg" alt="Interfaz gráfica">
-                    <span class="mat-text">Características técnicas de la interfaz gráfica</span>
-                </div>
-                <div class="jornada-banner">— JORNADA TARDE —</div>
-                <div class="receso-dia">Receso</div>
-                <div class="ingles_tarde">
-                    <img class="img-circulo" src="TU_RUTA/ingles.jpg" alt="Inglés">
-                    <span class="mat-text">Inglés</span>
-                </div>
-                <div class="receso-dia">Receso</div>
-                <div class="ingles_tarde2">
-                    <img class="img-circulo" src="TU_RUTA/ingles.jpg" alt="Inglés">
-                    <span class="mat-text">Inglés</span>
-                </div>
-            </div>
+    <!-- FILA 5: banner jornada tarde -->
+    <div class="c ban">JORNADA<br>TARDE</div>
+    <div class="c ban">— TARDE —</div>
+    <div class="c ban">— TARDE —</div>
+    <div class="c ban">— TARDE —</div>
+    <div class="c ban">— TARDE —</div>
+    <div class="c ban">— TARDE —</div>
 
-            <div class="dia">
-                <div class="encabezado">Jueves</div>
-                <div class="programacion">
-                    <img class="img-circulo" src="TU_RUTA/codificar.jpg" alt="Codificar software">
-                    <span class="mat-text">Codificar el software</span>
-                </div>
-                <div class="receso-dia">Receso</div>
-                <div class="programacion2">
-                    <img class="img-circulo" src="TU_RUTA/codificar.jpg" alt="Codificar software">
-                    <span class="mat-text">Codificar el software</span>
-                </div>
-                <div class="jornada-banner">— JORNADA TARDE —</div>
-                <div class="receso-dia">Receso</div>
-                <div class="vacio"></div>
-                <div class="receso-dia">Receso</div>
-                <div class="vacio"></div>
-            </div>
+    <!-- FILA 6: receso tarde -->
+    <div class="c rec">Receso</div>
+    <div class="c rec">Receso</div>
+    <div class="c rec">Receso</div>
+    <div class="c rec">Receso</div>
+    <div class="c rec">Receso</div>
+    <div class="c rec">Receso</div>
 
-            <div class="dia">
-                <div class="encabezado">Viernes</div>
-                <div class="programacion">
-                    <img class="img-circulo" src="TU_RUTA/basedatos.jpg" alt="Base de datos">
-                    <span class="mat-text">Construir la base de datos</span>
-                </div>
-                <div class="receso-dia">Receso</div>
-                <div class="programacion2">
-                    <img class="img-circulo" src="TU_RUTA/modelar.jpg" alt="Modelar funciones">
-                    <span class="mat-text">Modelar funciones del software</span>
-                </div>
-                <div class="jornada-banner">— JORNADA TARDE —</div>
-                <div class="receso-dia">Receso</div>
-                <div class="vacio"></div>
-                <div class="receso-dia">Receso</div>
-                <div class="vacio"></div>
-            </div>
+    <!-- FILA 7: 12:00 - 3:00 -->
+    <div class="c hora">12:00 pm<br>3:00 pm</div>
+    <div class="c vacio"></div>
+    <div class="c vacio"></div>
+    <div class="c slot"><div class="bloque"><img class="img-c" src="TU_RUTA/ingles.jpg" alt=""><span class="mat-text">Inglés</span></div></div>
+    <div class="c vacio"></div>
+    <div class="c vacio"></div>
 
-        </div>
-    </div>
+    <!-- FILA 8: receso tarde -->
+    <div class="c rec">Receso</div>
+    <div class="c rec">Receso</div>
+    <div class="c rec">Receso</div>
+    <div class="c rec">Receso</div>
+    <div class="c rec">Receso</div>
+    <div class="c rec">Receso</div>
+
+    <!-- FILA 9: 3:00 - 6:00 -->
+    <div class="c hora">3:00 pm<br>6:00 pm</div>
+    <div class="c vacio"></div>
+    <div class="c vacio"></div>
+    <div class="c slot"><div class="bloque"><img class="img-c" src="TU_RUTA/ingles.jpg" alt=""><span class="mat-text">Inglés</span></div></div>
+    <div class="c vacio"></div>
+    <div class="c vacio"></div>
+
+</div>
 </body>
 </html>

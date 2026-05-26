@@ -1,80 +1,116 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container{
-    display: flex;
-    margin: 20px auto;
-    flex-direction: row;
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f0f0f0;
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 110px repeat(5, 1fr);
+    grid-template-rows: 50px 1fr 28px 1fr 28px 28px 1fr 28px 1fr;
     width: 90%;
-    height: 600px;
-    border: black 1px solid;
+    margin: 20px auto;
+    border: 1px solid black;
+    background: white;
 }
 
-.horas{
-    width: 20%;
-    height: 600px;
-    border-right: rgba(75, 75, 75, 0.97) 1px solid;
+/* Celda base */
+.c {
+    border-right: 1px solid rgba(75, 75, 75, 0.5);
+    border-bottom: 1px dashed rgba(75, 75, 75, 0.4);
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
-.hora{
-    flex-grow:  1;
-    border-bottom:  rgba(75, 75, 75, 0.97)1px dashed;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: #444;
     text-align: center;
-    padding: 35px;
+    line-height: 1.4;
+    padding: 4px 2px;
 }
 
-.hora:last-child{
-    border-bottom: none;
-}
-
-.dias{
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    height: 600px;
-}
-
-.dia{
-    flex-grow: 1;
-    border-right: rgba(75, 75, 75, 0.97) 1px solid;
-}
-
-.dia:last-child{
+/* Última columna sin borde derecho */
+.c:nth-child(6n) {
     border-right: none;
 }
 
-.encabezado{
-      border-bottom: rgba(75, 75, 75, 0.97) 1px solid;
-      height: 65.5px;
-      text-align: center;
-      padding: 20px;
+/* Encabezados */
+.enc {
+    background: #1a1a2e;
+    color: #e0e0ff;
+    font-size: 12px;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(75, 75, 75, 0.5);
 }
 
-.programacion{
-    position: relative;
-    /* posicionar en y*/
-    top: 87px;
-    /* posicionar en x*/
-    left: 10px;
-    width: 90%;
-    height: 180px;
-    background-color: rgb(163, 158, 158);
-}   
-
-.ingles_lunes{
-    position: relative;
-    top:180px;
-    left: 10px;
-    width: 90%;
-    height: 160px;
-    background-color: rgb(163, 158, 158);
+/* Horas */
+.hora {
+    background: white;
+    font-size: 10px;
+    color: #444;
 }
 
+/* Recesos */
+.rec {
+    background: #f5f5f5;
+    color: #aaa;
+    font-style: italic;
+    border-bottom: 1px solid rgba(75, 75, 75, 0.3);
+}
 
-   
+/* Banner jornada tarde */
+.ban {
+    background: #1a1a2e;
+    color: #a0c4ff;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    border-bottom: 1px solid rgba(75, 75, 75, 0.3);
+}
+
+/* Slot con materia */
+.slot {
+    padding: 6px 4px;
+}
+
+/* Bloque gris con espacio alrededor */
+.bloque {
+    width: 82%;
+    height: 90%;
+    background: rgb(163, 158, 158);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+/* Celda vacía */
+.vacio {
+    background: white;
+}
+
+/* Imagen circular */
+.img-c {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+}
+
+/* Texto materia */
+.mat-text {
+    font-size: 10px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    line-height: 1.3;
+}
